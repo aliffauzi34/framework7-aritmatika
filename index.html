@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="css/framework7.bundle.min.css">
+    <!-- Path to your custom app styles-->
+    <!-- <link rel="stylesheet" href="css/to/my-app.css"> -->
+  </head>
+  <body>
+    <!-- App root element -->
+    <div id="app">
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+
+          <!-- Top Navbar -->
+          <div class="navbar">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+              <div class="title">Awesome App</div>
+            </div>
+          </div>
+
+          <!-- Bottom Toolbar -->
+          <div class="toolbar toolbar-bottom">
+            <div class="toolbar-inner">
+              <!-- Toolbar links -->
+              <a href="#" class="link">Link 1</a>
+              <a href="#" class="link">Link 2</a>
+            </div>
+          </div>
+
+          <!-- Scrollable page content -->
+          <div class="page-content">
+            <div class="block">
+                <div class="list">
+                  <ul>
+                    <!-- additional "item-input-outline" class -->
+                    <li class="item-content item-input item-input-outline">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Bilangan 1</div>
+                        <div class="item-input-wrap">
+                          <input type="text" id="bil1">
+                        <span class="input-clear-button"></span>
+                      </div>
+                    </div>
+                  </li>
+                    <li class="item-content item-input item-input-outline">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Bilangan 2</div>
+                        <div class="item-input-wrap">
+                          <input type="text" id="bil2">
+                        <span class="input-clear-button"></span>
+                      </div> 
+                    </div>
+                  </li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <button class="col button button-fill color-red" id="tambah">+</button>
+                  <button class="col button button-fill color-orange" id="kurang">-</button>
+                  <button class="col button button-fill color-blue" id="kali">x</button>
+                  <button class="col button button-fill color-lime" id="bagi">:</button>
+                </div>
+                <div id="hasil"></div>  
+            </div>     
+          </div>
+              <div class="toolbar toolbar-bottom">
+                <div class="toolbar-inner">
+                  <a href="/page2/" class="link">Page 2</a>
+                </div>
+              </div>        
+        </div>
+
+        <div data-name="page2" class="page stacked">
+
+          <!-- Top Navbar -->
+          <div class="navbar">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+              <div class="title">Awesome App</div>
+            </div>
+          </div>
+
+          <!-- Bottom Toolbar -->
+          <div class="toolbar toolbar-bottom">
+            <div class="toolbar-inner">
+              <!-- Toolbar links -->
+              <a href="#" class="link">Link 1</a>
+              <a href="#" class="link">Link 2</a>
+            </div>
+          </div>
+
+          <!-- Scrollable page content -->
+          <div class="page-content">
+            <div class="block">
+                <div class="list">
+                  <ul>
+                    <!-- additional "item-input-outline" class -->
+                    <li class="item-content item-input item-input-outline">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Bilangan 1</div>
+                        <div class="item-input-wrap">
+                          <input type="text" id="angka1">
+                        <span class="input-clear-button"></span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input item-input-outline">
+                    <div class="item-inner">
+                      <div class="item-title item-label">Bilangan 2</div>
+                      <div class="item-input-wrap">
+                        <input type="text" id="angka2">
+                      <span class="input-clear-button"></span>
+                      </div> 
+                    </div>
+                  </li>
+                  <li class="item-content item-input item-input-outline">
+                    <div class="item-inner">
+                      <div class="item-title item-label">Pilih Operator</div>
+                      <div class="item-input-wrap">
+                        <select  id="operator">
+                          <option value="tambah">+</option>
+                          <option value="kurang">-</option>
+                          <option value="kali">x</option>
+                          <option value="bagi">:</option>
+                        </select>
+                      <span class="input-clear-button"></span>
+                      </div> 
+                    </div>
+                  </li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <button class="col button button-fill color-red" id="proses">proses</button>
+                </div>
+                <div id="nilai"></div>  
+            </div>     
+          </div>
+              <div class="toolbar toolbar-bottom">
+                <div class="toolbar-inner">
+                  <a href="/home/" class="link">Home</a>
+                </div>
+              </div>        
+        </div>
+
+
+
+
+      </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="js/framework7.bundle.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>
